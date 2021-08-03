@@ -30,6 +30,8 @@ app.use(methodOverride('_method'));
 app.use(flash());
 app.use(session({secret:'MySecret', resave:true, saveUninitialized:true}));
 
+app.use(express.static('ha'))
+
 // Passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -47,7 +49,9 @@ app.use('/posts', require('./routes/posts'));
 app.use('/users', require('./routes/users'));
 
 // Port setting
-var port = 3000;
+var port = 8001;
 app.listen(port, function(){
   console.log('server on! http://localhost:'+port);
 });
+
+

@@ -4,7 +4,8 @@
   "description": "이 저장소의 코드는\r [http://a-mean-blog.com/ko/blog/Node-JS-첫걸음/게시판-만들기](http://a-mean-blog.com/ko/blog/Node-JS-첫걸음/게시판-만들기)에서 작성되었습니다.\r <br>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "express-session": "^1.17.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.8.3",
+    "nodemon": "^2.0.12",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }
